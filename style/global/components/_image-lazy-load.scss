@@ -1,4 +1,4 @@
-.netar-lazy-image {
+.#{$project-id}-lazy-image {
   display: block;
 
   &__anchor {
@@ -6,7 +6,7 @@
   }
 
   &--is-responsive {
-    @extend .netar-lazy-image;
+    @extend .#{$project-id}-lazy-image;
 
     width: 100%;
     height: auto;

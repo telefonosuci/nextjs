@@ -1,2 +1,16 @@
 // Utils
-@import './utils/variables'
+@import './utils/_variables.scss';
+
+// Base
+@import './base/_reset.scss';
+
+
+// Layout
+@import './layout/_global.scss';
+@import './layout/_body.scss';
+@import './layout/_header.scss';
+@import './layout/_footer.scss';
+@import './layout/_fonts.scss';
+
+// Vendors
+@import './vendor/iconmonstr-iconic-font.css';

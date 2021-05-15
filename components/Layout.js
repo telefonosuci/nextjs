@@ -12,25 +12,30 @@ export default function Layout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header>
-        <nav>
+      <header className='netar-l-header'>
+
+        <div className='netar-l-header__logo'>
+          <img alt='Logo'></img>
+        </div>
+
+        <nav className='netar-l-header__nav'>
           <Link href="/">
-            <a>Home</a>
+            <a className='netar-l-header__nav-a'>Home</a>
           </Link>{' '}
-          |
+
           <Link href="/about-us">
-            <a>About</a>
+            <a className='netar-l-header__nav-a'>About</a>
           </Link>{' '}
-          |
+
           <Link href="/people">
-            <a>People</a>
+            <a className='netar-l-header__nav-a'>People</a>
           </Link>
         </nav>
       </header>
-
-      {children}
-
-      <footer>{'I`m here to stay'}</footer>
+      <div className='netar-l-body'>
+        {children}
+      </div>
+      <footer className='netar-l-footer'>{'I`m here to stay'}</footer>
     </div>
   )
 }

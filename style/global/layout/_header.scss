@@ -1,0 +1,14 @@
+.#{$project-id}-l-header {
+    font-family: Roboto;
+    display: flex;
+    padding: 24px;
+    &__nav {
+        display: flex;
+    }
+
+    &__nav-a {
+        text-decoration: none;
+        margin: 0 8px;
+    }
+
+}
