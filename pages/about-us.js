@@ -1,5 +1,5 @@
   
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 function AboutUs() {
     return <Layout title="About us">
