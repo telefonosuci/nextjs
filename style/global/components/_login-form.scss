@@ -1,0 +1,30 @@
+.netar-login-form {
+  &__social-bar {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+
+    &--twitter {
+      background-color: aqua;
+    }
+
+    &--google {
+      background-color: azure;
+    }
+
+    &--facebook {
+      background-color: blue;
+      color: white;
+    }
+  }
+}

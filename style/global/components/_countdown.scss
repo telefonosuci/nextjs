@@ -1,0 +1,41 @@
+.netar-c-countdown {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  justify-content: center;
+  background-image: url(./assets/images/abstract-background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+  }
+
+  &__timer-container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 0 auto;
+  }
+
+  &__unit-container {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 80px;
+    height: 80px;
+    line-height: 20px;
+  }
+
+  &__timer-separator {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    font-size: 28px;
+    line-height: 80px;
+  }
+}

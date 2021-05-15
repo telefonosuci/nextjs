@@ -1,0 +1,17 @@
+.netar-layout-grid {
+  display: flex;
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__cell {
+    display: flex;
+    justify-content: center;
+
+    &--6 {
+      width: 50%;
+    }
+  }
+}

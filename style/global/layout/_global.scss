@@ -1,0 +1,54 @@
+.netar-layout-global {
+  &__header {
+    display: block;
+    border: 1px solid red;
+
+    &--sticky {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  &__body {
+    display: block;
+  }
+
+  &__footer {
+    height: 500px;
+    background-color: $netar-main-light;
+  }
+
+  &__main-container {
+    display: block;
+  }
+
+  &__main-content {
+    background-color: lightgray;
+
+    &--full-width {
+      width: 100%;
+      margin: 0;
+    }
+
+    &--centered {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  &__outer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px solid red;
+  }
+
+  &__inner-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    border: 1px solid red;
+  }
+
+  &__hint {
+    font-family: RobotoThin, sans-serif;
+  }
+}

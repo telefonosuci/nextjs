@@ -1,0 +1,50 @@
+.netar-form {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 48px;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    width: fit-content;
+
+    input {
+      background: transparent;
+    }
+
+    label {
+      position: absolute;
+      font-family: Roboto, sans-serif;
+      text-transform: uppercase;
+      padding: 4px;
+      transition: 0.2s;
+      z-index: -1;
+    }
+
+    input:not(:placeholder-shown) + label {
+      margin-top: -24px;
+      font-size: 12px;
+    }
+
+    input:focus + label {
+      margin-top: -24px;
+      font-size: 12px;
+    }
+
+    input::-moz-placeholder {
+      opacity: 0;
+    }
+
+    input::placeholder {
+      opacity: 0;
+    }
+  }
+}

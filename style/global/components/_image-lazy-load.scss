@@ -1,0 +1,14 @@
+.netar-lazy-image {
+  display: block;
+
+  &__anchor {
+    text-decoration: none;
+  }
+
+  &--is-responsive {
+    @extend .netar-lazy-image;
+
+    width: 100%;
+    height: auto;
+  }
+}

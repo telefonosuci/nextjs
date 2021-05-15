@@ -1,0 +1,37 @@
+.netar-c-slider {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+  }
+
+  &__description {
+    font-family: Roboto, sans-serif;
+    text-align: center;
+  }
+
+  &__slider-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: fit-content;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  &__slider-button {
+    height: 30px;
+    flex-basis: 100%;
+  }
+
+  &__slide {
+    height: 300px;
+    flex-basis: 60%;
+    margin: 12px;
+  }
+}
