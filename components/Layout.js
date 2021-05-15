@@ -18,12 +18,12 @@ export default function Layout({
             <a>Home</a>
           </Link>{' '}
           |
-          <Link href="/about">
+          <Link href="/about-us">
             <a>About</a>
           </Link>{' '}
           |
-          <Link href="/contact">
-            <a>Contact</a>
+          <Link href="/people">
+            <a>People</a>
           </Link>
         </nav>
       </header>
