@@ -1,10 +1,27 @@
-import Link from 'next/link'
 import Head from 'next/head'
+import Header from './Header'
+import React, { Fragment, useEffect, useRef, useState } from 'react';
 
 export default function Layout({
   children,
   title = 'This is the default title',
 }) {
+  const [isSticky, setSticky] = useState(false);
+  const ref = useRef(null);
+  const handleScroll = () => {
+    if (ref.current) {
+      setSticky(ref.current.getBoundingClientRect().top <= 100);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <Head>
@@ -12,26 +29,7 @@ export default function Layout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header className='netar-l-header'>
-
-        <div className='netar-l-header__logo'>
-          <img alt='Logo'></img>
-        </div>
-
-        <nav className='netar-l-header__nav'>
-          <Link href="/">
-            <a className='netar-l-header__nav-a'>Home</a>
-          </Link>{' '}
-
-          <Link href="/about-us">
-            <a className='netar-l-header__nav-a'>About</a>
-          </Link>{' '}
-
-          <Link href="/people">
-            <a className='netar-l-header__nav-a'>People</a>
-          </Link>
-        </nav>
-      </header>
+      <Header />
       <div className='netar-l-body'>
         {children}
       </div>

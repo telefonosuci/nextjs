@@ -1,7 +1,25 @@
 .#{$project-id}-l-header {
     font-family: Roboto;
     display: flex;
-    padding: 24px;
+    flex-direction: column;
+    position: relative;
+    &__top {
+        display: flex;
+        height: 150px;
+    }
+
+    &__sticky {
+        position: relative;
+        background-color: $netar-main-yellow;
+        padding: 12px;
+        &--fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            transition:all .2s ease;
+        } 
+    }
+
     &__nav {
         display: flex;
     }
